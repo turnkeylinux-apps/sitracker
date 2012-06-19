@@ -17,3 +17,23 @@ mv $(dirname $WEBROOT)/sit-* $WEBROOT
 rm $SRC/sit_*.tar.gz
 chown -R root:root $WEBROOT
 
+# create attachments and preconfigure database settings
+ATTACHMENTS=$WEBROOT/attachments-$(mcookie)
+mkdir -p $ATTACHMENTS
+chown -R www-data:www-data $ATTACHMENTS
+
+cat >$WEBROOT/config.inc.php<<EOF
+<?php
+\$CONFIG['db_hostname'] = 'localhost';
+\$CONFIG['db_username'] = '$DB_USER';
+\$CONFIG['db_password'] = '$DB_PASS';
+\$CONFIG['db_database'] = '$DB_NAME';
+\$CONFIG['attachment_fspath'] = '$ATTACHMENTS/';
+
+// You may override variables configured in defaults.inc.php here
+
+?>
+EOF
+chown www-data:www-data $WEBROOT/config.inc.php
+chmod 440 $WEBROOT/config.inc.php
+
