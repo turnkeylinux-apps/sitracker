@@ -11,3 +11,9 @@ ADMIN_MAIL=admin@example.com
 SRC=/usr/local/src
 WEBROOT=/var/www/sitracker
 
+# unpack
+tar -zxf $SRC/sit_*.tar.gz -C $(dirname $WEBROOT)
+mv $(dirname $WEBROOT)/sit-* $WEBROOT
+rm $SRC/sit_*.tar.gz
+chown -R root:root $WEBROOT
+
