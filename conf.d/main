@@ -17,6 +17,10 @@ mv $(dirname $WEBROOT)/sit-* $WEBROOT
 rm $SRC/sit_*.tar.gz
 chown -R root:root $WEBROOT
 
+# apply bugfixes
+patch $WEBROOT/incident_details.php $SRC/patches/clean_fixed_list.diff
+rm -rf $SRC/patches
+
 # create attachments and preconfigure database settings
 ATTACHMENTS=$WEBROOT/attachments-$(mcookie)
 mkdir -p $ATTACHMENTS

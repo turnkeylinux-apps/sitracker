@@ -1,0 +1,18 @@
+--- incident_details.php.orig	2012-06-19 14:58:46.000000000 +0000
++++ incident_details.php	2012-06-19 15:15:54.000000000 +0000
+@@ -21,7 +21,7 @@
+ // External variables
+ $incidentid = clean_int($_REQUEST['id']);
+ $id = $incidentid;
+-$win = clean_fixed_list($_REQUEST['win'], array('','incomingview', 'jump', 'holdingview', 'sit_popup'));
++$win = clean_fixed_list($_REQUEST['win'], array('','incomingview', 'jump', 'holdingview', 'sit_popup', "incident{$id}"));
+ 
+ if ($win == 'incomingview')
+ {
+@@ -823,4 +823,4 @@
+ 
+     include (APPLICATION_INCPATH . 'incident_html_bottom.inc.php');
+ }
+-?>
+\ No newline at end of file
++?>
