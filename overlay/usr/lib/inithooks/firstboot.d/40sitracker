@@ -1,0 +1,8 @@
+#!/bin/bash -e
+# set sitracker admin password and email
+
+. /etc/default/inithooks
+
+[ -e $INITHOOKS_CONF ] && . $INITHOOKS_CONF
+$INITHOOKS_PATH/bin/sitracker.py --pass="$APP_PASS" --email="$APP_EMAIL"
+
