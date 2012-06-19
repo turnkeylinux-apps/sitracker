@@ -64,6 +64,9 @@ $CURL $URL --data "newpassword=$ADMIN_PASS&passwordagain=$ADMIN_PASS&email=$EMAI
 
 rm -f /tmp/cookie
 
+# set site name
+$MYSQL_BATCH --database=$DB_NAME --execute "INSERT INTO config VALUES ('application_name', 'TurnKey SiTracker');"
+
 # stop services
 /etc/init.d/mysql stop
 /etc/init.d/apache2 stop
