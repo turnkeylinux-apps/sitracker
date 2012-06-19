@@ -37,3 +37,8 @@ EOF
 chown www-data:www-data $WEBROOT/config.inc.php
 chmod 440 $WEBROOT/config.inc.php
 
+# configure apache
+a2dissite default
+a2ensite sitracker
+a2enmod rewrite
+
