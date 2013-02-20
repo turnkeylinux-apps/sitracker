@@ -6,5 +6,4 @@ php5-cli
 php5-curl
 php5-imap
 
-curl
 patch      /* only required to patch bugs not in stable - argh!! */
