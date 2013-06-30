@@ -14,7 +14,6 @@ and on top of that:
 - SiT! Support Incident Tracker configurations:
    
    - Installed from upstream source code to /var/www/sitracker
-   - Applied bugfix: `http://bugs.sitracker.org/view.php?id=1746`_
 
 - SSL support out of the box.
 - `PHPMyAdmin`_ administration frontend for MySQL (listening on port
@@ -27,7 +26,7 @@ Credentials *(passwords set at first boot)*
 -------------------------------------------
 
 -  Webmin, SSH, MySQL, phpMyAdmin: username **root**
--  SiT! Support Incident Tracker: username **admin@example.com**
+-  SiTracker: username is email set on first boot
 
 
 .. _SiT!: http://sitracker.org/
