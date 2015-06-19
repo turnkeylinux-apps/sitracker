@@ -16,7 +16,7 @@ and on top of that:
    - Installed from upstream source code to /var/www/sitracker
 
 - SSL support out of the box.
-- `PHPMyAdmin`_ administration frontend for MySQL (listening on port
+- `Adminer`_ administration frontend for MySQL (listening on port
   12322 - uses SSL).
 - Postfix MTA (bound to localhost) to allow sending of email (e.g.,
   password recovery).
@@ -32,4 +32,4 @@ Credentials *(passwords set at first boot)*
 .. _SiT!: http://sitracker.org/
 .. _TurnKey Core: http://www.turnkeylinux.org/core
 .. _`http://bugs.sitracker.org/view.php?id=1746`: http://bugs.sitracker.org/view.php?id=1746
-.. _PHPMyAdmin: http://www.phpmyadmin.net
+.. _Adminer: http://www.adminer.org/
