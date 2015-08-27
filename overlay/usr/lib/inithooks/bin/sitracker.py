@@ -9,6 +9,7 @@ Option:
 
 import sys
 import getopt
+import inithooks_cache
 import subprocess
 import hashlib
 
@@ -53,6 +54,8 @@ def main():
             "SiTracker Email",
             "Enter email address for the SiTracker 'admin' account.",
             "admin@example.com")
+
+    inithooks_cache.write('APP_EMAIL', email)
 
     hash = hashlib.md5(password).hexdigest()
 
