@@ -30,6 +30,6 @@ Credentials *(passwords set at first boot)*
 
 
 .. _SiT!: http://sitracker.org/
-.. _TurnKey Core: http://www.turnkeylinux.org/core
+.. _TurnKey Core: https://www.turnkeylinux.org/core
 .. _`http://bugs.sitracker.org/view.php?id=1746`: http://bugs.sitracker.org/view.php?id=1746
 .. _Adminer: http://www.adminer.org/
