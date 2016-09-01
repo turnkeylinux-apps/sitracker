@@ -1,7 +1,7 @@
-SiT! Support Incident Tracker - Support Incident Tracker
-========================================================
+SiT! - Support Incident Tracker
+===============================
 
-`SiT!`_ Support Incident Tracker! is a help desk web application that
+`SiT!`_ Support Incident Tracker is a help desk web application that
 helps track technical support requests, contacts, sites, support
 contracts and support incidents in one place. Send emails directly from
 SiT!, attach files and record every communication in the incident log.
