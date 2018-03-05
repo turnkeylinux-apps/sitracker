@@ -43,8 +43,8 @@ a2ensite sitracker
 a2enmod rewrite
 
 # start services
-/etc/init.d/mysql start
-/etc/init.d/apache2 start
+service mysql start
+service apache2 start
 
 # setup the database
 MYSQL_BATCH="mysql --user=root --password=$MYSQL_PASS --batch"
@@ -68,6 +68,7 @@ rm -f /tmp/cookie
 $MYSQL_BATCH --database=$DB_NAME --execute "INSERT INTO config VALUES ('application_name', 'TurnKey SiTracker');"
 
 # stop services
-/etc/init.d/mysql stop
-/etc/init.d/apache2 stop
+service mysql stop
+service apache2 stop
+
 
