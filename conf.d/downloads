@@ -6,7 +6,6 @@ dl() {
 }
 
 VERSION="3.67/sit_3.67p2.tar.gz"
-URL="https://versaweb.dl.sourceforge.net/project/sitracker/stable/$VERSION"
-
+URL="https://sourceforge.net/projects/sitracker/files/stable/$VERSION"
 dl $URL /usr/local/src
 
