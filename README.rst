@@ -15,6 +15,11 @@ and on top of that:
    
    - Installed from upstream source code to /var/www/sitracker
 
+     **Security note**: Updates to SiT! Support Incident Tracker may
+     require supervision so they **ARE NOT** configured to install
+     automatically. See `SiT upgrade documentation`_ for upgrading.
+
+
 - SSL support out of the box.
 - `Adminer`_ administration frontend for MySQL (listening on port
   12322 - uses SSL).
@@ -30,7 +35,8 @@ Credentials *(passwords set at first boot)*
 -  SiTracker: username is email set on first boot
 
 
-.. _SiT!: http://sitracker.org/
+.. _SiT!: https://sitracker.org/
 .. _TurnKey Core: https://www.turnkeylinux.org/core
 .. _`http://bugs.sitracker.org/view.php?id=1746`: http://bugs.sitracker.org/view.php?id=1746
-.. _Adminer: http://www.adminer.org/
+.. _SiT upgrade documentation: https://github.com/sitracker/sitracker/blob/master/doc/UPGRADE
+.. _Adminer: https://www.adminer.org/
