@@ -1,3 +1,10 @@
+turnkey-sitracker-15.1 (1) turnkey; urgency=low
+
+  * Rebuild to resolve inadvertent removal of mariadb during sec-updates
+    - part of #1246.
+
+ -- Jeremy Davis <jeremy@turnkeylinux.org>  Thu, 22 Nov 2018 14:58:25 +1100
+
 turnkey-sitracker-15.0 (1) turnkey; urgency=low
 
   * Install Adminer directly from stretch/main repo
